@@ -288,3 +288,93 @@ body {
   .dash-sub { font-size: 12px; }
   .btn { padding: 8px 16px; font-size: 14px; }
 }
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 768px) {
+  body { font-size: 14px; }
+  
+  .dash-side, .lp-nav {
+    width: 100% !important;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 60px;
+    flex-direction: row !important;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1000;
+    padding: 0 5px;
+    background: #fff;
+    border-top: 1px solid #e5e7eb;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+  }
+  
+  .dash-side-logo, .lp-logo { display: none !important; }
+  
+  .dash-nav, .lp-links {
+    display: flex;
+    flex-direction: row !important;
+    width: 100%;
+    justify-content: space-around;
+    gap: 0 !important;
+  }
+  
+  .dash-nav a, .lp-links a, .lp-link {
+    flex-direction: column;
+    padding: 8px 5px !important;
+    font-size: 11px;
+    text-align: center;
+    gap: 2px !important;
+  }
+  
+  .dash-nav a svg, .lp-link svg {
+    font-size: 20px !important;
+    margin: 0 !important;
+  }
+  
+  .dash-nav a span:last-child, .lp-link span {
+    font-size: 10px;
+  }
+  
+  .dash-main, .lp-main {
+    margin-left: 0 !important;
+    margin-bottom: 70px;
+    padding: 15px;
+    width: 100%;
+  }
+  
+  .dash-hdr {
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+  }
+  .dash-title { font-size: 20px; }
+  .dash-sub { font-size: 12px; }
+  
+  .stat-grid {
+    grid-template-columns: 1fr !important;
+    gap: 10px;
+  }
+  .stat-card-1 { padding: 15px; }
+  .stat-val { font-size: 24px; }
+  
+  .dash-table { overflow-x: auto; }
+  table { font-size: 12px; min-width: 600px; }
+  th, td { padding: 10px 8px; white-space: nowrap; }
+  
+  .login-card { width: 92% !important; padding: 25px 20px; }
+  .login-wrap { padding: 10px; }
+  
+  input, select, button, textarea { font-size: 16px !important; }
+  .btn-pri { padding: 12px 20px; width: 100%; }
+  
+  .dash-card { padding: 15px; border-radius: 12px; }
+  .two-col { grid-template-columns: 1fr !important; }
+  .chart-container { height: 250px !important; }
+}
+
+@media (max-width: 480px) {
+  .dash-title { font-size: 18px; }
+  .dash-sub { font-size: 11px; }
+  .stat-val { font-size: 20px; }
+  .dash-nav a { padding: 6px 3px !important; font-size: 10px; }
+}
