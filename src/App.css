@@ -265,3 +265,26 @@ body {
   display: block;
   margin: 0 auto 10px;
 }
+/* ===== RESPONSIVE DESIGN FOR MOBILE ===== */
+@media (max-width: 768px) {
+  .dash-side { width: 100% !important; position: fixed; bottom: 0; left: 0; height: 60px; flex-direction: row; justify-content: space-around; z-index: 1000; padding: 0; }
+  .dash-side-logo { display: none; }
+  .dash-nav { display: flex; flex-direction: row; width: 100%; justify-content: space-around; }
+  .dash-nav a { padding: 10px; font-size: 12px; }
+  .dash-nav a span { display: none; }
+  .dash-main { margin-left: 0 !important; margin-bottom: 60px; padding: 10px; }
+  .dash-hdr { flex-direction: column; gap: 10px; }
+  .dash-title { font-size: 18px; }
+  .stat-grid { grid-template-columns: 1fr !important; }
+  .dash-card { padding: 15px; }
+  table { font-size: 12px; }
+  th, td { padding: 8px; }
+  .login-card { width: 90% !important; padding: 20px; }
+  .login-wrap { padding: 10px; }
+  input, select, button { font-size: 16px; }
+}
+@media (max-width: 480px) {
+  .dash-title { font-size: 16px; }
+  .dash-sub { font-size: 12px; }
+  .btn { padding: 8px 16px; font-size: 14px; }
+}
