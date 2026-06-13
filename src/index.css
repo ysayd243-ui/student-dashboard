@@ -1,13 +1,71 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* ===== MOBILE RESPONSIVE - FORCE OVERRIDE ===== */
+@media (max-width: 768px) {
+  .dash-side, [class*="side"] {
+    width: 100% !important;
+    position: fixed !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    top: auto !important;
+    height: 60px !important;
+    flex-direction: row !important;
+    justify-content: space-around !important;
+    align-items: center !important;
+    z-index: 9999 !important;
+    padding: 0 5px !important;
+    background: #fff !important;
+    border-top: 1px solid #e5e7eb !important;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.1) !important;
+  }
+  
+  .dash-side-logo, [class*="logo"] { display: none !important; }
+  
+  .dash-nav, [class*="nav"] {
+    display: flex !important;
+    flex-direction: row !important;
+    width: 100% !important;
+    justify-content: space-around !important;
+    gap: 0 !important;
+  }
+  
+  .dash-nav a, [class*="nav"] a {
+    flex-direction: column !important;
+    padding: 8px 5px !important;
+    font-size: 11px !important;
+    text-align: center !important;
+    gap: 2px !important;
+  }
+  
+  .dash-main, [class*="main"] {
+    margin-left: 0 !important;
+    margin-bottom: 70px !important;
+    padding: 15px !important;
+    width: 100% !important;
+  }
+  
+  .dash-hdr, [class*="hdr"] {
+    flex-direction: column !important;
+    gap: 10px !important;
+    padding: 15px !important;
+  }
+  
+  .dash-title, [class*="title"] { font-size: 20px !important; }
+  
+  .stat-grid, [class*="grid"] {
+    grid-template-columns: 1fr !important;
+    gap: 10px !important;
+  }
+  
+  .dash-table, [class*="table"] { overflow-x: auto !important; }
+  
+  table { font-size: 12px !important; min-width: 600px !important; }
+  
+  .login-card, [class*="login"] { width: 92% !important; padding: 25px 20px !important; }
+  
+  .btn-pri, [class*="btn"] { width: 100% !important; padding: 12px 20px !important; }
+  
+  input, select, button { font-size: 16px !important; }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@media (max-width: 480px) {
+  .dash-title, [class*="title"] { font-size: 18px !important; }
 }
