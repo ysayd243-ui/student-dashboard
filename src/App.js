@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React
+import PowerBIDashboard from './components/PowerBIDashboard';, { useState, useEffect } from "react";
 import "./App.css";
 import { MdDashboard, MdPeople, MdChecklist, MdNotifications, MdBarChart, MdSettings, MdLogout, MdPictureAsPdf, MdAutoGraph } from "react-icons/md";
 import sphinxLogo from "./sphinx-logo.jpeg";
@@ -888,5 +889,6 @@ function AppStyles({ darkMode }) {
 }
 
 export default App;
+
 
 
