@@ -1,3 +1,4 @@
+import { useMediaQuery } from 'react-responsive';
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import { MdDashboard, MdPeople, MdChecklist, MdNotifications, MdBarChart, MdSettings, MdLogout, MdPictureAsPdf, MdAutoGraph } from "react-icons/md";
@@ -692,6 +693,7 @@ function TopBar({ page, user, userProfile, userRole, darkMode, setDarkMode, hand
 
 /* ══ MAIN APP ══ */
 function App() {
+  const isMobile = useMediaQuery({ maxWidth: 768 });
   const [view,setView]=useState("landing");
   const [darkMode,setDarkMode]=useState(false);
   const [user,setUser]=useState(null);
