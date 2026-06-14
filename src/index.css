@@ -1,67 +1,8 @@
-/* Sidebar styles */
-.dash-side {
-  width: 230px;
-  background: #fff;
-  border-right: 1px solid #e2e8f0;
-  display: flex;
-  flex-direction: column;
-  position: sticky;
-  top: 0;
-  height: 100vh;
-  flex-shrink: 0;
-  overflow-y: auto;
-}
-
-.dash-side-logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 20px;
-  border-bottom: 1px solid #f1f5f9;
-}
-
-/* Main content */
-main {
-  flex: 1;
-  overflow-x: hidden;
-  overflow-y: auto;
-  background: #f8fafc;
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
-}
-
-/* Page fade animation */
-.page-fade {
-  animation: fadeUp 0.35s ease;
-}
-
-@keyframes fadeUp {
-  from { opacity: 0; transform: translateY(12px); }
-  to { opacity: 1; transform: none; }
-}
-
-/* Loading */
-.loading {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 200px;
-  font-size: 14px;
-  color: #94a3b8;
-}
-
-/* Stat grid */
-.stat-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 16px;
-  margin-bottom: 20px;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .dash-side {
-    display: none;
-  }
-}
+.dash-side { width: 230px; background: #fff; border-right: 1px solid #e2e8f0; display: flex; flex-direction: column; position: sticky; top: 0; height: 100vh; flex-shrink: 0; overflow-y: auto; }
+.dash-side-logo { display: flex; align-items: center; gap: 10px; padding: 20px; border-bottom: 1px solid #f1f5f9; }
+main { flex: 1; overflow-x: hidden; overflow-y: auto; background: #f8fafc; display: flex; flex-direction: column; min-width: 0; }
+.page-fade { animation: fadeUp 0.35s ease; }
+@keyframes fadeUp { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+.loading { display: flex; align-items: center; justify-content: center; height: 200px; font-size: 14px; color: #94a3b8; }
+.stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin-bottom: 20px; }
+@media (max-width: 768px) { .dash-side { display: none; } }
