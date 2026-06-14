@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { createClient } from '@supabase/supabase-js';
 import PowerBIDashboard from './components/PowerBIDashboard';
 import * as XLSX from 'xlsx';
-import PowerBIDashboard from './components/PowerBIDashboard';
 import PowerBIDashboard from './components/PowerBIDashboard';, { useState, useEffect } from "react";
 import "./App.css";
 import { MdDashboard, MdPeople, MdChecklist, MdNotifications, MdBarChart, MdSettings, MdLogout, MdPictureAsPdf, MdAutoGraph } from "react-icons/md";
@@ -893,6 +892,7 @@ function AppStyles({ darkMode }) {
 }
 
 export default App;
+
 
 
 
