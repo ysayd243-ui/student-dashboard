@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { createClient } from '@supabase/supabase-js';
 import * as XLSX from 'xlsx';
-import PowerBIDashboard from './components/PowerBIDashboard';, { useState, useEffect } from "react";
+import PowerBIDashboard from './components/PowerBIDashboard';
 import "./App.css";
 import { MdDashboard, MdPeople, MdChecklist, MdNotifications, MdBarChart, MdSettings, MdLogout, MdPictureAsPdf, MdAutoGraph } from "react-icons/md";
 import sphinxLogo from "./sphinx-logo.jpeg";
@@ -891,6 +891,7 @@ function AppStyles({ darkMode }) {
 }
 
 export default App;
+
 
 
 
