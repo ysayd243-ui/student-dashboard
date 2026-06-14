@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import PowerBIDashboard from './components/PowerBIDashboard';
 import * as XLSX from 'xlsx';
 import { createClient } from '@supabase/supabase-js';
 import PowerBIDashboard from './components/PowerBIDashboard';
