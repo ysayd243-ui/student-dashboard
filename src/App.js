@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import * as XLSX from 'xlsx';
 import { createClient } from '@supabase/supabase-js';
 import PowerBIDashboard from './components/PowerBIDashboard';
 import * as XLSX from 'xlsx';
@@ -894,6 +893,7 @@ function AppStyles({ darkMode }) {
 }
 
 export default App;
+
 
 
 
